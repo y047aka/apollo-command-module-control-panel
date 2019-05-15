@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body, header, footer, ul, li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif; }
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 2400px; }
+
+svg {
+  stroke-width: 1;
+  background: rgba(0, 0, 0, 0.1); }
+  svg .panels polygon {
+    fill: rgba(0, 0, 0, 0.5); }
+  svg .boiler {
+    fill: rgba(0, 0, 0, 0);
+    stroke: #000; }
+  svg .head-light * {
+    fill: rgba(255, 255, 255, 0);
+    stroke: #000; }
+  svg .number-plate {
+    fill: rgba(168, 36, 36, 0);
+    stroke: #000; }
+  svg .coupler {
+    stroke: #000; }
+    svg .coupler .frame {
+      fill: rgba(194, 10, 10, 0); }
+    svg .coupler .fog-lamp {
+      fill: rgba(255, 255, 255, 0); }
+    svg .coupler .buffer {
+      fill: rgba(204, 102, 51, 0); }

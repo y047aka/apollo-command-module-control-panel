@@ -10,13 +10,15 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
+  display: none;
   width: 2400px; }
 
 svg {
   stroke-width: 1;
   background: rgba(0, 0, 0, 0.1); }
   svg .panels polygon {
-    fill: rgba(0, 0, 0, 0.5); }
+    fill: rgba(0, 0, 0, 0.5);
+    stroke: orange; }
   svg .boiler {
     fill: rgba(0, 0, 0, 0);
     stroke: #000; }

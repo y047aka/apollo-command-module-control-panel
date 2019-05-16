@@ -2,9 +2,9 @@ module Main exposing (main)
 
 import Browser
 import Html exposing (img)
-import Html.Attributes exposing (src)
-import TypedSvg exposing (circle, g, polygon, rect, svg)
-import TypedSvg.Attributes exposing (class, points, transform, viewBox)
+import Html.Attributes exposing (id, src)
+import TypedSvg exposing (circle, defs, g, polygon, rect, svg, symbol, use)
+import TypedSvg.Attributes exposing (class, points, string, transform, viewBox, xlinkHref)
 import TypedSvg.Attributes.InPx exposing (cx, cy, height, r, width, x, y)
 import TypedSvg.Core exposing (Svg)
 import TypedSvg.Types exposing (Transform(..))
@@ -56,10 +56,17 @@ view model =
             , height 870
             , viewBox -1200 0 2400 870
             ]
-            [ panels2
+            [ definitions
+            , panels2
             ]
         ]
     }
+
+
+definitions : Svg msg
+definitions =
+    defs []
+        [ symbol [ id "screw_4" ] [ circle [ cx 4, cy 4, r 4 ] [] ] ]
 
 
 panels2 : Svg msg
@@ -78,7 +85,7 @@ panels2 =
 
 panel_center : Svg msg
 panel_center =
-    g []
+    g [ class [ "panel" ] ]
         [ polygon
             [ points
                 [ ( 0, 10 )
@@ -93,12 +100,31 @@ panel_center =
                 ]
             ]
             []
+        , g []
+            [ circle [ cx 192, cy 120, r 4 ] []
+            , circle [ cx 335, cy 173, r 4 ] []
+            , circle [ cx 335, cy 232, r 4 ] []
+            , circle [ cx 335, cy 288, r 4 ] []
+            , circle [ cx 335, cy 345, r 4 ] []
+            , circle [ cx 335, cy 402, r 4 ] []
+            , circle [ cx 335, cy 459, r 4 ] []
+            , circle [ cx 335, cy 515, r 4 ] []
+            , circle [ cx 335, cy 571, r 4 ] []
+            , circle [ cx 335, cy 627, r 4 ] []
+            , circle [ cx 302, cy 658, r 4 ] []
+            , circle [ cx 262, cy 619, r 4 ] []
+            , circle [ cx 221, cy 579, r 4 ] []
+            , circle [ cx 181, cy 540, r 4 ] []
+            , circle [ cx 141, cy 501, r 4 ] []
+            , circle [ cx 85, cy 481, r 4 ] []
+            , circle [ cx 28, cy 481, r 4 ] []
+            ]
         ]
 
 
 panel_center2 : Svg msg
 panel_center2 =
-    g []
+    g [ class [ "panel" ] ]
         [ polygon
             [ points
                 [ ( 425, 115 )
@@ -118,6 +144,34 @@ panel_center2 =
                 ]
             ]
             []
+        , g []
+            [ circle [ cx 559, cy 194, r 4 ] []
+            , circle [ cx 593, cy 283, r 4 ] []
+            , circle [ cx 634, cy 334, r 4 ] []
+            , circle [ cx 676, cy 386, r 4 ] []
+            , circle [ cx 717, cy 438, r 4 ] []
+            , circle [ cx 737, cy 477, r 4 ] []
+            , circle [ cx 746, cy 533, r 4 ] []
+            , circle [ cx 756, cy 589, r 4 ] []
+            , circle [ cx 764, cy 645, r 4 ] []
+            , circle [ cx 727, cy 658, r 4 ] []
+            , circle [ cx 671, cy 658, r 4 ] []
+            , circle [ cx 615, cy 658, r 4 ] []
+            , circle [ cx 558, cy 657, r 4 ] []
+            , circle [ cx 502, cy 657, r 4 ] []
+            , circle [ cx 445, cy 657, r 4 ] []
+            , circle [ cx 389, cy 657, r 4 ] []
+            , circle [ cx 335, cy 655, r 4 ] []
+            , circle [ cx 335, cy 598, r 4 ] []
+            , circle [ cx 335, cy 542, r 4 ] []
+            , circle [ cx 335, cy 486, r 4 ] []
+            , circle [ cx 335, cy 429, r 4 ] []
+            , circle [ cx 335, cy 372, r 4 ] []
+            , circle [ cx 335, cy 316, r 4 ] []
+            , circle [ cx 335, cy 261, r 4 ] []
+            , circle [ cx 335, cy 203, r 4 ] []
+            , circle [ cx 335, cy 147, r 4 ] []
+            ]
         ]
 
 
@@ -142,9 +196,64 @@ panel_right =
                 ]
                 []
             ]
-        , g [] [ polygon [ points [ ( 680, 230 ), ( 850, 200 ), ( 875, 455 ), ( 760, 455 ) ] ] [] ]
-        , g [] [ polygon [ points [ ( 760, 455 ), ( 1190, 455 ), ( 1145, 690 ), ( 790, 670 ) ] ] [] ]
-        , g [] [ polygon [ points [ ( 800, 665 ), ( 1145, 690 ), ( 1035, 860 ) ] ] [] ]
+        , g []
+            [ polygon [ points [ ( 680, 230 ), ( 850, 200 ), ( 875, 455 ), ( 760, 455 ) ] ] []
+            , g []
+                [ use [ xlinkHref "#screw_4", x 686, y 235 ] []
+                , use [ xlinkHref "#screw_4", x 726, y 227 ] []
+                , use [ xlinkHref "#screw_4", x 767, y 219 ] []
+                , use [ xlinkHref "#screw_4", x 808, y 211 ] []
+                , use [ xlinkHref "#screw_4", x 842, y 235 ] []
+                , use [ xlinkHref "#screw_4", x 846, y 281 ] []
+                , use [ xlinkHref "#screw_4", x 850, y 326 ] []
+                , use [ xlinkHref "#screw_4", x 853, y 371 ] []
+                , use [ xlinkHref "#screw_4", x 857, y 417 ] []
+                , use [ xlinkHref "#screw_4", x 834, y 440 ] []
+                , use [ xlinkHref "#screw_4", x 797, y 441 ] []
+                , use [ xlinkHref "#screw_4", x 762, y 441 ] []
+                , use [ xlinkHref "#screw_4", x 751, y 409 ] []
+                , use [ xlinkHref "#screw_4", x 735, y 366 ] []
+                , use [ xlinkHref "#screw_4", x 718, y 321 ] []
+                , use [ xlinkHref "#screw_4", x 702, y 278 ] []
+                ]
+            ]
+        , g []
+            [ polygon [ points [ ( 760, 455 ), ( 1190, 455 ), ( 1145, 690 ), ( 790, 670 ) ] ] []
+            , g []
+                [ use [ xlinkHref "#screw_4", x 767, y 462 ] []
+                , use [ xlinkHref "#screw_4", x 809, y 462 ] []
+                , use [ xlinkHref "#screw_4", x 854, y 462 ] []
+                , use [ xlinkHref "#screw_4", x 899, y 462 ] []
+                , use [ xlinkHref "#screw_4", x 944, y 462 ] []
+                , use [ xlinkHref "#screw_4", x 989, y 462 ] []
+                , use [ xlinkHref "#screw_4", x 1034, y 462 ] []
+                , use [ xlinkHref "#screw_4", x 1080, y 462 ] []
+                , use [ xlinkHref "#screw_4", x 1125, y 462 ] []
+                , use [ xlinkHref "#screw_4", x 1171, y 462 ] []
+                , use [ xlinkHref "#screw_4", x 1168, y 504 ] []
+                , use [ xlinkHref "#screw_4", x 1159, y 547 ] []
+                , use [ xlinkHref "#screw_4", x 1150, y 591 ] []
+                , use [ xlinkHref "#screw_4", x 1141, y 633 ] []
+                , use [ xlinkHref "#screw_4", x 788, y 625 ] []
+                , use [ xlinkHref "#screw_4", x 783, y 584 ] []
+                , use [ xlinkHref "#screw_4", x 773, y 502 ] []
+                ]
+            ]
+        , g []
+            [ polygon [ points [ ( 800, 665 ), ( 1145, 690 ), ( 1035, 860 ) ] ] []
+            , g []
+                [ use [ xlinkHref "#screw_4", x 906, y 679 ] []
+                , use [ xlinkHref "#screw_4", x 950, y 683 ] []
+                , use [ xlinkHref "#screw_4", x 994, y 685 ] []
+                , use [ xlinkHref "#screw_4", x 1038, y 689 ] []
+                , use [ xlinkHref "#screw_4", x 1048, y 706 ] []
+                , use [ xlinkHref "#screw_4", x 1082, y 692 ] []
+                , use [ xlinkHref "#screw_4", x 993, y 811 ] []
+                , use [ xlinkHref "#screw_4", x 958, y 783 ] []
+                , use [ xlinkHref "#screw_4", x 925, y 755 ] []
+                , use [ xlinkHref "#screw_4", x 891, y 726 ] []
+                ]
+            ]
         ]
 
 

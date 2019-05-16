@@ -14,13 +14,15 @@ img {
   width: 2400px; }
 
 svg {
-  stroke-width: 1;
+  stroke-width: 0.3;
   background: rgba(0, 0, 0, 0.1); }
   svg .panels {
     display: none; }
   svg .panels-2 polygon {
-    fill: rgba(0, 0, 0, 0.5);
-    stroke: orange; }
+    fill: #999999;
+    stroke: #666; }
+  svg .panels-2 .panel circle {
+    fill: #333333; }
   svg .boiler {
     fill: rgba(0, 0, 0, 0);
     stroke: #000; }
@@ -38,3 +40,5 @@ svg {
       fill: rgba(255, 255, 255, 0); }
     svg .coupler .buffer {
       fill: rgba(204, 102, 51, 0); }
+  svg #screw_4 circle {
+    fill: #cccccc; }

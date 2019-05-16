@@ -4916,7 +4916,7 @@ var elm_community$typed_svg$TypedSvg$Attributes$points = function (pts) {
 			' ',
 			A2(elm$core$List$map, pointToString, pts)));
 };
-var author$project$Main$panel_1 = A2(
+var author$project$Main$panel_center = A2(
 	elm_community$typed_svg$TypedSvg$g,
 	_List_Nil,
 	_List_fromArray(
@@ -4928,15 +4928,20 @@ var author$project$Main$panel_1 = A2(
 					elm_community$typed_svg$TypedSvg$Attributes$points(
 					_List_fromArray(
 						[
-							_Utils_Tuple2(850, 10),
-							_Utils_Tuple2(850, 110),
-							_Utils_Tuple2(670, 110),
-							_Utils_Tuple2(820, 20)
+							_Utils_Tuple2(0, 10),
+							_Utils_Tuple2(200, 35),
+							_Utils_Tuple2(200, 160),
+							_Utils_Tuple2(340, 160),
+							_Utils_Tuple2(325, 190),
+							_Utils_Tuple2(325, 665),
+							_Utils_Tuple2(295, 665),
+							_Utils_Tuple2(115, 490),
+							_Utils_Tuple2(0, 490)
 						]))
 				]),
 			_List_Nil)
 		]));
-var author$project$Main$panel_10 = A2(
+var author$project$Main$panel_center2 = A2(
 	elm_community$typed_svg$TypedSvg$g,
 	_List_Nil,
 	_List_fromArray(
@@ -4948,488 +4953,236 @@ var author$project$Main$panel_10 = A2(
 					elm_community$typed_svg$TypedSvg$Attributes$points(
 					_List_fromArray(
 						[
-							_Utils_Tuple2(1030, 30),
-							_Utils_Tuple2(1170, 20),
-							_Utils_Tuple2(1170, 130),
-							_Utils_Tuple2(1030, 110)
+							_Utils_Tuple2(425, 115),
+							_Utils_Tuple2(495, 165),
+							_Utils_Tuple2(560, 175),
+							_Utils_Tuple2(580, 195),
+							_Utils_Tuple2(540, 235),
+							_Utils_Tuple2(580, 270),
+							_Utils_Tuple2(590, 265),
+							_Utils_Tuple2(745, 455),
+							_Utils_Tuple2(780, 665),
+							_Utils_Tuple2(325, 665),
+							_Utils_Tuple2(325, 190),
+							_Utils_Tuple2(335, 160),
+							_Utils_Tuple2(320, 160),
+							_Utils_Tuple2(320, 40)
 						]))
 				]),
 			_List_Nil)
 		]));
-var author$project$Main$panel_11 = A2(
+var author$project$Main$panel_right = A2(
 	elm_community$typed_svg$TypedSvg$g,
 	_List_Nil,
 	_List_fromArray(
 		[
 			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
 			_List_fromArray(
 				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
+					A2(
+					elm_community$typed_svg$TypedSvg$polygon,
 					_List_fromArray(
 						[
-							_Utils_Tuple2(1170, 20),
-							_Utils_Tuple2(1360, 45),
-							_Utils_Tuple2(1360, 115),
-							_Utils_Tuple2(1170, 130)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_12 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
+							elm_community$typed_svg$TypedSvg$Attributes$points(
+							_List_fromArray(
+								[
+									_Utils_Tuple2(565, 120),
+									_Utils_Tuple2(730, 120),
+									_Utils_Tuple2(750, 145),
+									_Utils_Tuple2(750, 175),
+									_Utils_Tuple2(690, 175),
+									_Utils_Tuple2(680, 185),
+									_Utils_Tuple2(665, 170),
+									_Utils_Tuple2(615, 170),
+									_Utils_Tuple2(600, 185),
+									_Utils_Tuple2(585, 170),
+									_Utils_Tuple2(575, 170)
+								]))
+						]),
+					_List_Nil)
+				])),
 			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
 			_List_fromArray(
 				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
+					A2(
+					elm_community$typed_svg$TypedSvg$polygon,
 					_List_fromArray(
 						[
-							_Utils_Tuple2(850, 110),
-							_Utils_Tuple2(1170, 130),
-							_Utils_Tuple2(1155, 215),
-							_Utils_Tuple2(850, 215)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_13 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
+							elm_community$typed_svg$TypedSvg$Attributes$points(
+							_List_fromArray(
+								[
+									_Utils_Tuple2(680, 230),
+									_Utils_Tuple2(850, 200),
+									_Utils_Tuple2(875, 455),
+									_Utils_Tuple2(760, 455)
+								]))
+						]),
+					_List_Nil)
+				])),
 			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
 			_List_fromArray(
 				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
+					A2(
+					elm_community$typed_svg$TypedSvg$polygon,
 					_List_fromArray(
 						[
-							_Utils_Tuple2(1170, 130),
-							_Utils_Tuple2(1480, 115),
-							_Utils_Tuple2(1480, 410),
-							_Utils_Tuple2(1170, 420)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_14 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
+							elm_community$typed_svg$TypedSvg$Attributes$points(
+							_List_fromArray(
+								[
+									_Utils_Tuple2(760, 455),
+									_Utils_Tuple2(1190, 455),
+									_Utils_Tuple2(1145, 690),
+									_Utils_Tuple2(790, 670)
+								]))
+						]),
+					_List_Nil)
+				])),
 			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
 			_List_fromArray(
 				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
+					A2(
+					elm_community$typed_svg$TypedSvg$polygon,
 					_List_fromArray(
 						[
-							_Utils_Tuple2(850, 215),
-							_Utils_Tuple2(1020, 215),
-							_Utils_Tuple2(1020, 405),
-							_Utils_Tuple2(850, 405)
-						]))
-				]),
-			_List_Nil)
+							elm_community$typed_svg$TypedSvg$Attributes$points(
+							_List_fromArray(
+								[
+									_Utils_Tuple2(800, 665),
+									_Utils_Tuple2(1145, 690),
+									_Utils_Tuple2(1035, 860)
+								]))
+						]),
+					_List_Nil)
+				]))
 		]));
-var author$project$Main$panel_15 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(1020, 215),
-							_Utils_Tuple2(1155, 215),
-							_Utils_Tuple2(1170, 420),
-							_Utils_Tuple2(1020, 405)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_16 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(850, 405),
-							_Utils_Tuple2(1060, 425),
-							_Utils_Tuple2(860, 590),
-							_Utils_Tuple2(835, 590)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_17 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(1480, 10),
-							_Utils_Tuple2(1645, 110),
-							_Utils_Tuple2(1630, 130),
-							_Utils_Tuple2(1480, 115)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_18 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(1480, 115),
-							_Utils_Tuple2(1645, 110),
-							_Utils_Tuple2(1890, 425),
-							_Utils_Tuple2(1480, 425)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_19 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(1265, 425),
-							_Utils_Tuple2(1480, 410),
-							_Utils_Tuple2(1490, 595),
-							_Utils_Tuple2(1465, 595)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_2 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(625, 110),
-							_Utils_Tuple2(850, 110),
-							_Utils_Tuple2(850, 255),
-							_Utils_Tuple2(555, 250)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_20 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(1480, 425),
-							_Utils_Tuple2(1890, 425),
-							_Utils_Tuple2(1920, 595),
-							_Utils_Tuple2(1490, 595)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_21 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(1940, 465),
-							_Utils_Tuple2(2260, 465),
-							_Utils_Tuple2(2160, 618)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_22 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(1885, 255),
-							_Utils_Tuple2(2300, 220),
-							_Utils_Tuple2(2260, 465),
-							_Utils_Tuple2(1930, 465)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_23 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(1790, 30),
-							_Utils_Tuple2(1960, 10),
-							_Utils_Tuple2(1995, 240),
-							_Utils_Tuple2(1885, 255)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_24 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(60, 450),
-							_Utils_Tuple2(400, 455),
-							_Utils_Tuple2(145, 595)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_25 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(30, 215),
-							_Utils_Tuple2(445, 255),
-							_Utils_Tuple2(400, 455),
-							_Utils_Tuple2(60, 450)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_26 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(372, 11),
-							_Utils_Tuple2(540, 40),
-							_Utils_Tuple2(445, 255),
-							_Utils_Tuple2(330, 240)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_3 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(555, 250),
-							_Utils_Tuple2(635, 255),
-							_Utils_Tuple2(635, 400),
-							_Utils_Tuple2(440, 400)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_4 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(635, 255),
-							_Utils_Tuple2(765, 255),
-							_Utils_Tuple2(765, 400),
-							_Utils_Tuple2(635, 400)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_5 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(765, 255),
-							_Utils_Tuple2(850, 255),
-							_Utils_Tuple2(850, 500),
-							_Utils_Tuple2(765, 495)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_6 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(440, 400),
-							_Utils_Tuple2(615, 400),
-							_Utils_Tuple2(615, 490),
-							_Utils_Tuple2(440, 490)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_7 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(635, 400),
-							_Utils_Tuple2(765, 400),
-							_Utils_Tuple2(765, 495),
-							_Utils_Tuple2(635, 490)
-						]))
-				]),
-			_List_Nil)
-		]));
-var author$project$Main$panel_8 = A2(
-	elm_community$typed_svg$TypedSvg$g,
-	_List_Nil,
-	_List_fromArray(
-		[
-			A2(
-			elm_community$typed_svg$TypedSvg$polygon,
-			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$points(
-					_List_fromArray(
-						[
-							_Utils_Tuple2(420, 490),
-							_Utils_Tuple2(835, 510),
-							_Utils_Tuple2(835, 590),
-							_Utils_Tuple2(405, 585)
-						]))
-				]),
-			_List_Nil)
-		]));
+var elm$core$Basics$negate = function (n) {
+	return -n;
+};
 var elm_community$typed_svg$TypedSvg$Attributes$class = function (names) {
 	return A2(
 		elm_community$typed_svg$TypedSvg$Core$attribute,
 		'class',
 		A2(elm$core$String$join, ' ', names));
 };
-var author$project$Main$panels = A2(
+var elm$core$String$concat = function (strings) {
+	return A2(elm$core$String$join, '', strings);
+};
+var elm_community$typed_svg$TypedSvg$TypesToStrings$transformToString = function (xform) {
+	var tr = F2(
+		function (name, args) {
+			return elm$core$String$concat(
+				_List_fromArray(
+					[
+						name,
+						'(',
+						A2(
+						elm$core$String$join,
+						' ',
+						A2(elm$core$List$map, elm$core$String$fromFloat, args)),
+						')'
+					]));
+		});
+	switch (xform.$) {
+		case 'Matrix':
+			var a = xform.a;
+			var b = xform.b;
+			var c = xform.c;
+			var d = xform.d;
+			var e = xform.e;
+			var f = xform.f;
+			return A2(
+				tr,
+				'matrix',
+				_List_fromArray(
+					[a, b, c, d, e, f]));
+		case 'Rotate':
+			var a = xform.a;
+			var x = xform.b;
+			var y = xform.c;
+			return A2(
+				tr,
+				'rotate',
+				_List_fromArray(
+					[a, x, y]));
+		case 'Scale':
+			var x = xform.a;
+			var y = xform.b;
+			return A2(
+				tr,
+				'scale',
+				_List_fromArray(
+					[x, y]));
+		case 'SkewX':
+			var x = xform.a;
+			return A2(
+				tr,
+				'skewX',
+				_List_fromArray(
+					[x]));
+		case 'SkewY':
+			var y = xform.a;
+			return A2(
+				tr,
+				'skewY',
+				_List_fromArray(
+					[y]));
+		default:
+			var x = xform.a;
+			var y = xform.b;
+			return A2(
+				tr,
+				'translate',
+				_List_fromArray(
+					[x, y]));
+	}
+};
+var elm_community$typed_svg$TypedSvg$Attributes$transform = function (transforms) {
+	return A2(
+		elm_community$typed_svg$TypedSvg$Core$attribute,
+		'transform',
+		A2(
+			elm$core$String$join,
+			' ',
+			A2(elm$core$List$map, elm_community$typed_svg$TypedSvg$TypesToStrings$transformToString, transforms)));
+};
+var elm_community$typed_svg$TypedSvg$Types$Scale = F2(
+	function (a, b) {
+		return {$: 'Scale', a: a, b: b};
+	});
+var author$project$Main$panels2 = A2(
 	elm_community$typed_svg$TypedSvg$g,
 	_List_fromArray(
 		[
 			elm_community$typed_svg$TypedSvg$Attributes$class(
 			_List_fromArray(
-				['panels']))
+				['panels-2']))
 		]),
 	_List_fromArray(
-		[author$project$Main$panel_1, author$project$Main$panel_2, author$project$Main$panel_3, author$project$Main$panel_4, author$project$Main$panel_5, author$project$Main$panel_6, author$project$Main$panel_7, author$project$Main$panel_8, author$project$Main$panel_10, author$project$Main$panel_11, author$project$Main$panel_12, author$project$Main$panel_13, author$project$Main$panel_14, author$project$Main$panel_15, author$project$Main$panel_16, author$project$Main$panel_17, author$project$Main$panel_18, author$project$Main$panel_19, author$project$Main$panel_20, author$project$Main$panel_21, author$project$Main$panel_22, author$project$Main$panel_23, author$project$Main$panel_24, author$project$Main$panel_25, author$project$Main$panel_26]));
+		[
+			author$project$Main$panel_center,
+			author$project$Main$panel_center2,
+			author$project$Main$panel_right,
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_fromArray(
+				[
+					elm_community$typed_svg$TypedSvg$Attributes$transform(
+					_List_fromArray(
+						[
+							A2(elm_community$typed_svg$TypedSvg$Types$Scale, -1, 1)
+						]))
+				]),
+			_List_fromArray(
+				[author$project$Main$panel_center, author$project$Main$panel_center2, author$project$Main$panel_right]))
+		]));
 var elm$html$Html$img = _VirtualDom_node('img');
 var elm$json$Json$Encode$string = _Json_wrap;
 var elm$html$Html$Attributes$stringProperty = F2(
@@ -5526,7 +5279,7 @@ var author$project$Main$view = function (model) {
 				elm$html$Html$img,
 				_List_fromArray(
 					[
-						elm$html$Html$Attributes$src('./images/base.jpg')
+						elm$html$Html$Attributes$src('./images/base_0.jpg')
 					]),
 				_List_Nil),
 				A2(
@@ -5534,11 +5287,11 @@ var author$project$Main$view = function (model) {
 				_List_fromArray(
 					[
 						elm_community$typed_svg$TypedSvg$Attributes$InPx$width(2400),
-						elm_community$typed_svg$TypedSvg$Attributes$InPx$height(618),
-						A4(elm_community$typed_svg$TypedSvg$Attributes$viewBox, 0, 0, 2400, 618)
+						elm_community$typed_svg$TypedSvg$Attributes$InPx$height(870),
+						A4(elm_community$typed_svg$TypedSvg$Attributes$viewBox, -1200, 0, 2400, 870)
 					]),
 				_List_fromArray(
-					[author$project$Main$panels]))
+					[author$project$Main$panels2]))
 			]),
 		title: 'Apollo Command Module Control Panel'
 	};

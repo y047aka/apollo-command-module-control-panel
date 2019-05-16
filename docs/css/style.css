@@ -7,8 +7,8 @@ body, header, footer, ul, li {
 
 img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 70px;
+  left: 0px;
   z-index: -1;
   display: none;
   width: 2400px; }
@@ -16,7 +16,9 @@ img {
 svg {
   stroke-width: 1;
   background: rgba(0, 0, 0, 0.1); }
-  svg .panels polygon {
+  svg .panels {
+    display: none; }
+  svg .panels-2 polygon {
     fill: rgba(0, 0, 0, 0.5);
     stroke: orange; }
   svg .boiler {

@@ -4,9 +4,10 @@ import Browser
 import Html exposing (img)
 import Html.Attributes exposing (src)
 import TypedSvg exposing (circle, g, polygon, rect, svg)
-import TypedSvg.Attributes exposing (class, points, viewBox)
+import TypedSvg.Attributes exposing (class, points, transform, viewBox)
 import TypedSvg.Attributes.InPx exposing (cx, cy, height, r, width, x, y)
 import TypedSvg.Core exposing (Svg)
+import TypedSvg.Types exposing (Transform(..))
 
 
 main =
@@ -49,21 +50,107 @@ view : Model -> Browser.Document Msg
 view model =
     { title = "Apollo Command Module Control Panel"
     , body =
-        [ img [ src "./images/base.jpg" ] []
+        [ img [ src "./images/base_0.jpg" ] []
         , svg
             [ width 2400
-            , height 618
-            , viewBox 0 0 2400 618
+            , height 870
+            , viewBox -1200 0 2400 870
             ]
-            [ panels
+            [ panels2
             ]
         ]
     }
 
 
+panels2 : Svg msg
+panels2 =
+    g [ class [ "panels-2" ] ]
+        [ panel_center
+        , panel_center2
+        , panel_right
+        , g [ transform [ Scale -1 1 ] ]
+            [ panel_center
+            , panel_center2
+            , panel_right
+            ]
+        ]
+
+
+panel_center : Svg msg
+panel_center =
+    g []
+        [ polygon
+            [ points
+                [ ( 0, 10 )
+                , ( 200, 35 )
+                , ( 200, 160 )
+                , ( 340, 160 )
+                , ( 325, 190 )
+                , ( 325, 665 )
+                , ( 295, 665 )
+                , ( 115, 490 )
+                , ( 0, 490 )
+                ]
+            ]
+            []
+        ]
+
+
+panel_center2 : Svg msg
+panel_center2 =
+    g []
+        [ polygon
+            [ points
+                [ ( 425, 115 )
+                , ( 495, 165 )
+                , ( 560, 175 )
+                , ( 580, 195 )
+                , ( 540, 235 )
+                , ( 580, 270 )
+                , ( 590, 265 )
+                , ( 745, 455 )
+                , ( 780, 665 )
+                , ( 325, 665 )
+                , ( 325, 190 )
+                , ( 335, 160 )
+                , ( 320, 160 )
+                , ( 320, 40 )
+                ]
+            ]
+            []
+        ]
+
+
+panel_right : Svg msg
+panel_right =
+    g []
+        [ g []
+            [ polygon
+                [ points
+                    [ ( 565, 120 )
+                    , ( 730, 120 )
+                    , ( 750, 145 )
+                    , ( 750, 175 )
+                    , ( 690, 175 )
+                    , ( 680, 185 )
+                    , ( 665, 170 )
+                    , ( 615, 170 )
+                    , ( 600, 185 )
+                    , ( 585, 170 )
+                    , ( 575, 170 )
+                    ]
+                ]
+                []
+            ]
+        , g [] [ polygon [ points [ ( 680, 230 ), ( 850, 200 ), ( 875, 455 ), ( 760, 455 ) ] ] [] ]
+        , g [] [ polygon [ points [ ( 760, 455 ), ( 1190, 455 ), ( 1145, 690 ), ( 790, 670 ) ] ] [] ]
+        , g [] [ polygon [ points [ ( 800, 665 ), ( 1145, 690 ), ( 1035, 860 ) ] ] [] ]
+        ]
+
+
 panels : Svg msg
 panels =
-    g [ class [ "panels" ] ]
+    g [ class [ "panels" ], transform [ Translate -1170 90 ] ]
         [ panel_1
         , panel_2
         , panel_3
@@ -83,12 +170,6 @@ panels =
         , panel_18
         , panel_19
         , panel_20
-        , panel_21
-        , panel_22
-        , panel_23
-        , panel_24
-        , panel_25
-        , panel_26
         ]
 
 
@@ -201,44 +282,6 @@ panel_18 =
 panel_20 : Svg msg
 panel_20 =
     g [] [ polygon [ points [ ( 1480, 425 ), ( 1890, 425 ), ( 1920, 595 ), ( 1490, 595 ) ] ] [] ]
-
-
-
--- 21 to 23
-
-
-panel_21 : Svg msg
-panel_21 =
-    g [] [ polygon [ points [ ( 1940, 465 ), ( 2260, 465 ), ( 2160, 618 ) ] ] [] ]
-
-
-panel_22 : Svg msg
-panel_22 =
-    g [] [ polygon [ points [ ( 1885, 255 ), ( 2300, 220 ), ( 2260, 465 ), ( 1930, 465 ) ] ] [] ]
-
-
-panel_23 : Svg msg
-panel_23 =
-    g [] [ polygon [ points [ ( 1790, 30 ), ( 1960, 10 ), ( 1995, 240 ), ( 1885, 255 ) ] ] [] ]
-
-
-
--- 24 to 26
-
-
-panel_24 : Svg msg
-panel_24 =
-    g [] [ polygon [ points [ ( 60, 450 ), ( 400, 455 ), ( 145, 595 ) ] ] [] ]
-
-
-panel_25 : Svg msg
-panel_25 =
-    g [] [ polygon [ points [ ( 30, 215 ), ( 445, 255 ), ( 400, 455 ), ( 60, 450 ) ] ] [] ]
-
-
-panel_26 : Svg msg
-panel_26 =
-    g [] [ polygon [ points [ ( 372, 11 ), ( 540, 40 ), ( 445, 255 ), ( 330, 240 ) ] ] [] ]
 
 
 boiler : Svg msg

@@ -15,30 +15,12 @@ img {
 
 svg {
   stroke-width: 0.3;
-  background: rgba(0, 0, 0, 0.1); }
-  svg .panels {
-    display: none; }
-  svg .panels-2 polygon {
-    fill: #999999;
+  background: rgba(0, 0, 0, 0.1);
+  stroke: orange; }
+  svg .panels polygon {
+    fill: rgba(153, 153, 153, 0);
     stroke: #666; }
-  svg .panels-2 .panel circle {
+  svg .panels .panel circle {
     fill: #333333; }
-  svg .boiler {
-    fill: rgba(0, 0, 0, 0);
-    stroke: #000; }
-  svg .head-light * {
-    fill: rgba(255, 255, 255, 0);
-    stroke: #000; }
-  svg .number-plate {
-    fill: rgba(168, 36, 36, 0);
-    stroke: #000; }
-  svg .coupler {
-    stroke: #000; }
-    svg .coupler .frame {
-      fill: rgba(194, 10, 10, 0); }
-    svg .coupler .fog-lamp {
-      fill: rgba(255, 255, 255, 0); }
-    svg .coupler .buffer {
-      fill: rgba(204, 102, 51, 0); }
   svg #screw_4 circle {
     fill: #cccccc; }

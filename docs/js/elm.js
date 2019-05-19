@@ -4933,6 +4933,24 @@ var author$project$Main$definitions = A2(
 							elm_community$typed_svg$TypedSvg$Attributes$InPx$r(4)
 						]),
 					_List_Nil)
+				])),
+			A2(
+			elm_community$typed_svg$TypedSvg$symbol,
+			_List_fromArray(
+				[
+					elm$html$Html$Attributes$id('hole_4')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					elm_community$typed_svg$TypedSvg$circle,
+					_List_fromArray(
+						[
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$cx(4),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$cy(4),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$r(4)
+						]),
+					_List_Nil)
 				]))
 		]));
 var elm_community$typed_svg$TypedSvg$polygon = elm_community$typed_svg$TypedSvg$Core$node('polygon');
@@ -5044,52 +5062,83 @@ var author$project$Main$panel_3_base = A2(
 		]),
 	_List_Nil);
 var elm_community$typed_svg$TypedSvg$g = elm_community$typed_svg$TypedSvg$Core$node('g');
+var elm_community$typed_svg$TypedSvg$use = elm_community$typed_svg$TypedSvg$Core$node('use');
+var elm$virtual_dom$VirtualDom$attributeNS = F3(
+	function (namespace, key, value) {
+		return A3(
+			_VirtualDom_attributeNS,
+			namespace,
+			_VirtualDom_noOnOrFormAction(key),
+			_VirtualDom_noJavaScriptOrHtmlUri(value));
+	});
+var elm_community$typed_svg$TypedSvg$Core$attributeNS = elm$virtual_dom$VirtualDom$attributeNS;
+var elm_community$typed_svg$TypedSvg$Attributes$xlinkHref = A2(elm_community$typed_svg$TypedSvg$Core$attributeNS, 'http://www.w3.org/1999/xlink', 'xlink:href');
+var elm_community$typed_svg$TypedSvg$Attributes$x = function (length) {
+	return A2(
+		elm_community$typed_svg$TypedSvg$Core$attribute,
+		'x',
+		elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(length));
+};
+var elm_community$typed_svg$TypedSvg$Attributes$InPx$x = function (value) {
+	return elm_community$typed_svg$TypedSvg$Attributes$x(
+		elm_community$typed_svg$TypedSvg$Types$px(value));
+};
+var elm_community$typed_svg$TypedSvg$Attributes$y = function (length) {
+	return A2(
+		elm_community$typed_svg$TypedSvg$Core$attribute,
+		'y',
+		elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(length));
+};
+var elm_community$typed_svg$TypedSvg$Attributes$InPx$y = function (value) {
+	return elm_community$typed_svg$TypedSvg$Attributes$y(
+		elm_community$typed_svg$TypedSvg$Types$px(value));
+};
 var author$project$Main$panel_3_screws = A2(
 	elm_community$typed_svg$TypedSvg$g,
 	_List_Nil,
 	A2(
 		elm$core$List$map,
 		function (_n0) {
-			var x = _n0.a;
-			var y = _n0.b;
+			var dx = _n0.a;
+			var dy = _n0.b;
 			return A2(
-				elm_community$typed_svg$TypedSvg$circle,
+				elm_community$typed_svg$TypedSvg$use,
 				_List_fromArray(
 					[
-						elm_community$typed_svg$TypedSvg$Attributes$InPx$cx(x),
-						elm_community$typed_svg$TypedSvg$Attributes$InPx$cy(y),
-						elm_community$typed_svg$TypedSvg$Attributes$InPx$r(4)
+						elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#hole_4'),
+						elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+						elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
 					]),
 				_List_Nil);
 		},
 		_List_fromArray(
 			[
-				_Utils_Tuple2(559, 194),
-				_Utils_Tuple2(593, 283),
-				_Utils_Tuple2(634, 334),
-				_Utils_Tuple2(676, 386),
-				_Utils_Tuple2(717, 438),
-				_Utils_Tuple2(737, 477),
-				_Utils_Tuple2(746, 533),
-				_Utils_Tuple2(756, 589),
-				_Utils_Tuple2(764, 645),
-				_Utils_Tuple2(727, 658),
-				_Utils_Tuple2(671, 658),
-				_Utils_Tuple2(615, 658),
-				_Utils_Tuple2(558, 657),
-				_Utils_Tuple2(502, 657),
-				_Utils_Tuple2(445, 657),
-				_Utils_Tuple2(389, 657),
-				_Utils_Tuple2(335, 655),
-				_Utils_Tuple2(335, 598),
-				_Utils_Tuple2(335, 542),
-				_Utils_Tuple2(335, 486),
-				_Utils_Tuple2(335, 429),
-				_Utils_Tuple2(335, 372),
-				_Utils_Tuple2(335, 316),
-				_Utils_Tuple2(335, 261),
-				_Utils_Tuple2(335, 203),
-				_Utils_Tuple2(335, 147)
+				_Utils_Tuple2(555, 190),
+				_Utils_Tuple2(589, 279),
+				_Utils_Tuple2(630, 330),
+				_Utils_Tuple2(672, 382),
+				_Utils_Tuple2(713, 434),
+				_Utils_Tuple2(733, 473),
+				_Utils_Tuple2(742, 529),
+				_Utils_Tuple2(752, 585),
+				_Utils_Tuple2(760, 641),
+				_Utils_Tuple2(723, 654),
+				_Utils_Tuple2(667, 654),
+				_Utils_Tuple2(611, 654),
+				_Utils_Tuple2(554, 653),
+				_Utils_Tuple2(498, 653),
+				_Utils_Tuple2(441, 653),
+				_Utils_Tuple2(385, 653),
+				_Utils_Tuple2(331, 651),
+				_Utils_Tuple2(331, 594),
+				_Utils_Tuple2(331, 538),
+				_Utils_Tuple2(331, 482),
+				_Utils_Tuple2(331, 425),
+				_Utils_Tuple2(331, 368),
+				_Utils_Tuple2(331, 312),
+				_Utils_Tuple2(331, 257),
+				_Utils_Tuple2(331, 199),
+				_Utils_Tuple2(331, 143)
 			])));
 var elm$core$Basics$negate = function (n) {
 	return -n;
@@ -5270,37 +5319,37 @@ var author$project$Main$panel_2_screws = function () {
 	var screws = A2(
 		elm$core$List$map,
 		function (_n0) {
-			var x = _n0.a;
-			var y = _n0.b;
+			var dx = _n0.a;
+			var dy = _n0.b;
 			return A2(
-				elm_community$typed_svg$TypedSvg$circle,
+				elm_community$typed_svg$TypedSvg$use,
 				_List_fromArray(
 					[
-						elm_community$typed_svg$TypedSvg$Attributes$InPx$cx(x),
-						elm_community$typed_svg$TypedSvg$Attributes$InPx$cy(y),
-						elm_community$typed_svg$TypedSvg$Attributes$InPx$r(4)
+						elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#hole_4'),
+						elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+						elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
 					]),
 				_List_Nil);
 		},
 		_List_fromArray(
 			[
-				_Utils_Tuple2(192, 120),
-				_Utils_Tuple2(335, 173),
-				_Utils_Tuple2(335, 232),
-				_Utils_Tuple2(335, 288),
-				_Utils_Tuple2(335, 345),
-				_Utils_Tuple2(335, 402),
-				_Utils_Tuple2(335, 459),
-				_Utils_Tuple2(335, 515),
-				_Utils_Tuple2(335, 571),
-				_Utils_Tuple2(335, 627),
-				_Utils_Tuple2(302, 658),
-				_Utils_Tuple2(262, 619),
-				_Utils_Tuple2(221, 579),
-				_Utils_Tuple2(181, 540),
-				_Utils_Tuple2(141, 501),
-				_Utils_Tuple2(85, 481),
-				_Utils_Tuple2(28, 481)
+				_Utils_Tuple2(188, 116),
+				_Utils_Tuple2(331, 169),
+				_Utils_Tuple2(331, 228),
+				_Utils_Tuple2(331, 284),
+				_Utils_Tuple2(331, 341),
+				_Utils_Tuple2(331, 398),
+				_Utils_Tuple2(331, 455),
+				_Utils_Tuple2(331, 511),
+				_Utils_Tuple2(331, 567),
+				_Utils_Tuple2(331, 623),
+				_Utils_Tuple2(298, 654),
+				_Utils_Tuple2(258, 615),
+				_Utils_Tuple2(217, 575),
+				_Utils_Tuple2(177, 536),
+				_Utils_Tuple2(137, 497),
+				_Utils_Tuple2(81, 477),
+				_Utils_Tuple2(24, 477)
 			]));
 	return A2(
 		elm_community$typed_svg$TypedSvg$g,
@@ -5350,37 +5399,6 @@ var author$project$Main$panel_4_base = A2(
 				]),
 			_List_Nil)
 		]));
-var elm_community$typed_svg$TypedSvg$use = elm_community$typed_svg$TypedSvg$Core$node('use');
-var elm$virtual_dom$VirtualDom$attributeNS = F3(
-	function (namespace, key, value) {
-		return A3(
-			_VirtualDom_attributeNS,
-			namespace,
-			_VirtualDom_noOnOrFormAction(key),
-			_VirtualDom_noJavaScriptOrHtmlUri(value));
-	});
-var elm_community$typed_svg$TypedSvg$Core$attributeNS = elm$virtual_dom$VirtualDom$attributeNS;
-var elm_community$typed_svg$TypedSvg$Attributes$xlinkHref = A2(elm_community$typed_svg$TypedSvg$Core$attributeNS, 'http://www.w3.org/1999/xlink', 'xlink:href');
-var elm_community$typed_svg$TypedSvg$Attributes$x = function (length) {
-	return A2(
-		elm_community$typed_svg$TypedSvg$Core$attribute,
-		'x',
-		elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(length));
-};
-var elm_community$typed_svg$TypedSvg$Attributes$InPx$x = function (value) {
-	return elm_community$typed_svg$TypedSvg$Attributes$x(
-		elm_community$typed_svg$TypedSvg$Types$px(value));
-};
-var elm_community$typed_svg$TypedSvg$Attributes$y = function (length) {
-	return A2(
-		elm_community$typed_svg$TypedSvg$Core$attribute,
-		'y',
-		elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(length));
-};
-var elm_community$typed_svg$TypedSvg$Attributes$InPx$y = function (value) {
-	return elm_community$typed_svg$TypedSvg$Attributes$y(
-		elm_community$typed_svg$TypedSvg$Types$px(value));
-};
 var author$project$Main$panel_4_screws = A2(
 	elm_community$typed_svg$TypedSvg$g,
 	_List_Nil,

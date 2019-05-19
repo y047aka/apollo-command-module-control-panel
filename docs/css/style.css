@@ -16,11 +16,14 @@ img {
 svg {
   stroke-width: 0.3;
   background: rgba(0, 0, 0, 0.1);
-  stroke: orange; }
+  stroke: none; }
   svg .panels polygon {
-    fill: rgba(153, 153, 153, 0);
+    fill: #9da9af;
     stroke: #666; }
   svg .panels .panel circle {
     fill: #333333; }
-  svg #screw_4 circle {
-    fill: #cccccc; }
+  svg .screw circle {
+    fill: #cccccc;
+    stroke: none; }
+  svg .screw line {
+    stroke: #666; }

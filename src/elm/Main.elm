@@ -3,9 +3,9 @@ module Main exposing (main)
 import Browser
 import Html exposing (img)
 import Html.Attributes exposing (id, src)
-import TypedSvg exposing (circle, defs, g, polygon, rect, svg, symbol, use)
+import TypedSvg exposing (circle, defs, g, line, polygon, rect, svg, symbol, use)
 import TypedSvg.Attributes exposing (class, points, string, transform, viewBox, xlinkHref)
-import TypedSvg.Attributes.InPx exposing (cx, cy, height, r, width, x, y)
+import TypedSvg.Attributes.InPx exposing (cx, cy, height, r, width, x, x1, x2, y, y1, y2)
 import TypedSvg.Core exposing (Svg)
 import TypedSvg.Types exposing (Transform(..))
 
@@ -66,7 +66,16 @@ view model =
 definitions : Svg msg
 definitions =
     defs []
-        [ symbol [ id "screw_4" ] [ circle [ cx 4, cy 4, r 4 ] [] ]
+        [ symbol [ id "screw_4", class [ "screw" ] ]
+            [ circle [ cx 4, cy 4, r 4 ] []
+            , line [ x1 4, y1 2, x2 4, y2 6 ] []
+            , line [ x1 2, y1 4, x2 6, y2 4 ] []
+            ]
+        , symbol [ id "screw_2", class [ "screw" ] ]
+            [ circle [ cx 3, cy 3, r 3 ] []
+            , line [ x1 3, y1 1.5, x2 3, y2 4.5 ] []
+            , line [ x1 1.5, y1 3, x2 4.5, y2 3 ] []
+            ]
         , symbol [ id "hole_4" ] [ circle [ cx 4, cy 4, r 4 ] [] ]
         ]
 
@@ -145,7 +154,7 @@ panel_7 : Svg msg
 panel_7 =
     g []
         [ g [ transform [ Scale -1 1 ] ] [ panel_4_base ]
-        , g [ transform [ Scale -1 1 ] ] [ panel_4_screws ]
+        , panel_7_screws
         ]
 
 
@@ -153,7 +162,7 @@ panel_8 : Svg msg
 panel_8 =
     g []
         [ g [ transform [ Scale -1 1 ] ] [ panel_5_base ]
-        , g [ transform [ Scale -1 1 ] ] [ panel_5_screws ]
+        , g [] [ panel_8_screws ]
         ]
 
 
@@ -303,19 +312,31 @@ panel_3_screws =
 panel_4_screws : Svg msg
 panel_4_screws =
     g []
-        [ g []
-            ([ ( 906, 679 )
-             , ( 950, 683 )
-             , ( 994, 685 )
-             , ( 1038, 689 )
-             , ( 1048, 706 )
-             , ( 1082, 692 )
-             , ( 993, 811 )
-             , ( 958, 783 )
-             , ( 925, 755 )
-             , ( 891, 726 )
+        [ panel_4_and_7_screws
+        , g []
+            ([ ( 1048, 706 )
              ]
                 |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_4", x dx, y dy ] [])
+            )
+        , g []
+            ([ ( 1030, 764 )
+             ]
+                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_2", x dx, y dy ] [])
+            )
+        , g []
+            ([ ( 819, 670 )
+             , ( 863, 673 )
+             , ( 857, 701 )
+             , ( 881, 696 )
+             , ( 1128, 694 )
+             , ( 1091, 712 )
+             , ( 1080, 729 )
+             , ( 1100, 735 )
+             , ( 1078, 767 )
+             , ( 1057, 798 )
+             , ( 1036, 829 )
+             ]
+                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_2", x dx, y dy ] [])
             )
         ]
 
@@ -323,26 +344,42 @@ panel_4_screws =
 panel_5_screws : Svg msg
 panel_5_screws =
     g []
-        [ g []
-            ([ ( 767, 462 )
-             , ( 809, 462 )
-             , ( 854, 462 )
-             , ( 899, 462 )
-             , ( 944, 462 )
-             , ( 989, 462 )
-             , ( 1034, 462 )
-             , ( 1080, 462 )
-             , ( 1125, 462 )
-             , ( 1171, 462 )
-             , ( 1168, 504 )
-             , ( 1159, 547 )
-             , ( 1150, 591 )
-             , ( 1141, 633 )
-             , ( 788, 625 )
-             , ( 783, 584 )
-             , ( 773, 502 )
+        [ g [] [ panel_5_and_8_screws ]
+        , g []
+            ([ ( 795, 520 )
+             , ( 836, 520 )
+             , ( 796, 561 )
+             , ( 836, 561 )
+             , ( 845, 523 )
+             , ( 852, 525 )
+             , ( 883, 525 )
+             , ( 852, 556 )
+             , ( 883, 556 )
+             , ( 942, 527 )
+             , ( 1002, 516 )
+             , ( 1055, 527 )
+             , ( 1110, 544 )
+             , ( 841, 587 )
+             , ( 908, 587 )
+             , ( 1009, 575 )
+             , ( 1080, 595 )
+             , ( 818, 641 )
+             , ( 881, 631 )
+             , ( 948, 631 )
+             , ( 1017, 623 )
+             , ( 1080, 639 )
              ]
-                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_4", x dx, y dy ] [])
+                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_2", x dx, y dy ] [])
+            )
+        , g []
+            ([ ( 995, 655 )
+             , ( 1062, 650 )
+             , ( 1102, 650 )
+             , ( 1067, 676 )
+             , ( 1102, 679 )
+             , ( 1126, 677 )
+             ]
+                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_2", x dx, y dy ] [])
             )
         ]
 
@@ -367,6 +404,104 @@ panel_6_screws =
              , ( 735, 366 )
              , ( 718, 321 )
              , ( 702, 278 )
+             ]
+                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_4", x dx, y dy ] [])
+            )
+        ]
+
+
+panel_7_screws : Svg msg
+panel_7_screws =
+    g []
+        [ g [ transform [ Scale -1 1 ] ] [ panel_4_and_7_screws ]
+        , g []
+            ([ ( -870, 673 )
+             , ( -864, 699 )
+             , ( -1067, 794 )
+             , ( -1087, 764 )
+             , ( -1108, 732 )
+             ]
+                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_4", x dx, y dy ] [])
+            )
+        , g []
+            ([ ( -1026, 750 )
+             , ( -1021, 733 )
+             , ( -998, 729 )
+             ]
+                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_2", x dx, y dy ] [])
+            )
+        , g []
+            ([ ( -819, 670 )
+             , ( -1128, 694 )
+             , ( -1036, 829 )
+             ]
+                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_2", x dx, y dy ] [])
+            )
+        ]
+
+
+panel_8_screws : Svg msg
+panel_8_screws =
+    g []
+        [ g [ transform [ Scale -1 1 ] ] [ panel_5_and_8_screws ]
+        , g []
+            ([ ( -1086, 517 )
+             , ( -882, 518 )
+             , ( -1094, 550 )
+             , ( -1001, 565 )
+             , ( -939, 575 )
+             , ( -867, 568 )
+             , ( -1024, 614 )
+             , ( -867, 612 )
+             , ( -1026, 652 )
+             , ( -899, 652 )
+             , ( -825, 652 )
+             ]
+                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_2", x dx, y dy ] [])
+            )
+        ]
+
+
+panel_4_and_7_screws : Svg msg
+panel_4_and_7_screws =
+    g []
+        [ g []
+            ([ ( 906, 679 )
+             , ( 950, 683 )
+             , ( 994, 685 )
+             , ( 1038, 689 )
+             , ( 1082, 692 )
+             , ( 993, 811 )
+             , ( 958, 783 )
+             , ( 925, 755 )
+             , ( 891, 726 )
+             ]
+                |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_4", x dx, y dy ] [])
+            )
+        ]
+
+
+panel_5_and_8_screws : Svg msg
+panel_5_and_8_screws =
+    g []
+        [ g []
+            ([ ( 767, 462 )
+             , ( 809, 462 )
+             , ( 854, 462 )
+             , ( 899, 462 )
+             , ( 944, 462 )
+             , ( 989, 462 )
+             , ( 1034, 462 )
+             , ( 1080, 462 )
+             , ( 1125, 462 )
+             , ( 1171, 462 )
+             , ( 1168, 504 )
+             , ( 1159, 547 )
+             , ( 1150, 591 )
+             , ( 1141, 633 )
+             , ( 788, 625 )
+             , ( 783, 584 )
+             , ( 773, 502 )
              ]
                 |> List.map (\( dx, dy ) -> use [ xlinkHref "#screw_4", x dx, y dy ] [])
             )

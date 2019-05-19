@@ -4833,6 +4833,7 @@ var elm$virtual_dom$VirtualDom$nodeNS = function (tag) {
 var elm_community$typed_svg$TypedSvg$Core$node = elm$virtual_dom$VirtualDom$nodeNS('http://www.w3.org/2000/svg');
 var elm_community$typed_svg$TypedSvg$circle = elm_community$typed_svg$TypedSvg$Core$node('circle');
 var elm_community$typed_svg$TypedSvg$defs = elm_community$typed_svg$TypedSvg$Core$node('defs');
+var elm_community$typed_svg$TypedSvg$line = elm_community$typed_svg$TypedSvg$Core$node('line');
 var elm_community$typed_svg$TypedSvg$symbol = elm_community$typed_svg$TypedSvg$Core$node('symbol');
 var elm$virtual_dom$VirtualDom$attribute = F2(
 	function (key, value) {
@@ -4842,6 +4843,12 @@ var elm$virtual_dom$VirtualDom$attribute = F2(
 			_VirtualDom_noJavaScriptOrHtmlUri(value));
 	});
 var elm_community$typed_svg$TypedSvg$Core$attribute = elm$virtual_dom$VirtualDom$attribute;
+var elm_community$typed_svg$TypedSvg$Attributes$class = function (names) {
+	return A2(
+		elm_community$typed_svg$TypedSvg$Core$attribute,
+		'class',
+		A2(elm$core$String$join, ' ', names));
+};
 var elm$core$String$fromFloat = _String_fromNumber;
 var elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString = function (length) {
 	switch (length.$) {
@@ -4911,6 +4918,46 @@ var elm_community$typed_svg$TypedSvg$Attributes$InPx$r = function (value) {
 	return elm_community$typed_svg$TypedSvg$Attributes$r(
 		elm_community$typed_svg$TypedSvg$Types$px(value));
 };
+var elm_community$typed_svg$TypedSvg$Attributes$x1 = function (position) {
+	return A2(
+		elm_community$typed_svg$TypedSvg$Core$attribute,
+		'x1',
+		elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(position));
+};
+var elm_community$typed_svg$TypedSvg$Attributes$InPx$x1 = function (value) {
+	return elm_community$typed_svg$TypedSvg$Attributes$x1(
+		elm_community$typed_svg$TypedSvg$Types$px(value));
+};
+var elm_community$typed_svg$TypedSvg$Attributes$x2 = function (position) {
+	return A2(
+		elm_community$typed_svg$TypedSvg$Core$attribute,
+		'x2',
+		elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(position));
+};
+var elm_community$typed_svg$TypedSvg$Attributes$InPx$x2 = function (value) {
+	return elm_community$typed_svg$TypedSvg$Attributes$x2(
+		elm_community$typed_svg$TypedSvg$Types$px(value));
+};
+var elm_community$typed_svg$TypedSvg$Attributes$y1 = function (position) {
+	return A2(
+		elm_community$typed_svg$TypedSvg$Core$attribute,
+		'y1',
+		elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(position));
+};
+var elm_community$typed_svg$TypedSvg$Attributes$InPx$y1 = function (value) {
+	return elm_community$typed_svg$TypedSvg$Attributes$y1(
+		elm_community$typed_svg$TypedSvg$Types$px(value));
+};
+var elm_community$typed_svg$TypedSvg$Attributes$y2 = function (position) {
+	return A2(
+		elm_community$typed_svg$TypedSvg$Core$attribute,
+		'y2',
+		elm_community$typed_svg$TypedSvg$TypesToStrings$lengthToString(position));
+};
+var elm_community$typed_svg$TypedSvg$Attributes$InPx$y2 = function (value) {
+	return elm_community$typed_svg$TypedSvg$Attributes$y2(
+		elm_community$typed_svg$TypedSvg$Types$px(value));
+};
 var author$project$Main$definitions = A2(
 	elm_community$typed_svg$TypedSvg$defs,
 	_List_Nil,
@@ -4920,7 +4967,10 @@ var author$project$Main$definitions = A2(
 			elm_community$typed_svg$TypedSvg$symbol,
 			_List_fromArray(
 				[
-					elm$html$Html$Attributes$id('screw_4')
+					elm$html$Html$Attributes$id('screw_4'),
+					elm_community$typed_svg$TypedSvg$Attributes$class(
+					_List_fromArray(
+						['screw']))
 				]),
 			_List_fromArray(
 				[
@@ -4931,6 +4981,67 @@ var author$project$Main$definitions = A2(
 							elm_community$typed_svg$TypedSvg$Attributes$InPx$cx(4),
 							elm_community$typed_svg$TypedSvg$Attributes$InPx$cy(4),
 							elm_community$typed_svg$TypedSvg$Attributes$InPx$r(4)
+						]),
+					_List_Nil),
+					A2(
+					elm_community$typed_svg$TypedSvg$line,
+					_List_fromArray(
+						[
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$x1(4),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$y1(2),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$x2(4),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$y2(6)
+						]),
+					_List_Nil),
+					A2(
+					elm_community$typed_svg$TypedSvg$line,
+					_List_fromArray(
+						[
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$x1(2),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$y1(4),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$x2(6),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$y2(4)
+						]),
+					_List_Nil)
+				])),
+			A2(
+			elm_community$typed_svg$TypedSvg$symbol,
+			_List_fromArray(
+				[
+					elm$html$Html$Attributes$id('screw_2'),
+					elm_community$typed_svg$TypedSvg$Attributes$class(
+					_List_fromArray(
+						['screw']))
+				]),
+			_List_fromArray(
+				[
+					A2(
+					elm_community$typed_svg$TypedSvg$circle,
+					_List_fromArray(
+						[
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$cx(3),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$cy(3),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$r(3)
+						]),
+					_List_Nil),
+					A2(
+					elm_community$typed_svg$TypedSvg$line,
+					_List_fromArray(
+						[
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$x1(3),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$y1(1.5),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$x2(3),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$y2(4.5)
+						]),
+					_List_Nil),
+					A2(
+					elm_community$typed_svg$TypedSvg$line,
+					_List_fromArray(
+						[
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$x1(1.5),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$y1(3),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$x2(4.5),
+							elm_community$typed_svg$TypedSvg$Attributes$InPx$y2(3)
 						]),
 					_List_Nil)
 				])),
@@ -5258,12 +5369,6 @@ var author$project$Main$panel_1 = A2(
 			_List_fromArray(
 				[author$project$Main$panel_3_screws]))
 		]));
-var elm_community$typed_svg$TypedSvg$Attributes$class = function (names) {
-	return A2(
-		elm_community$typed_svg$TypedSvg$Core$attribute,
-		'class',
-		A2(elm$core$String$join, ' ', names));
-};
 var author$project$Main$panel_2_base = function () {
 	var right = A2(
 		elm_community$typed_svg$TypedSvg$g,
@@ -5399,7 +5504,7 @@ var author$project$Main$panel_4_base = A2(
 				]),
 			_List_Nil)
 		]));
-var author$project$Main$panel_4_screws = A2(
+var author$project$Main$panel_4_and_7_screws = A2(
 	elm_community$typed_svg$TypedSvg$g,
 	_List_Nil,
 	_List_fromArray(
@@ -5428,12 +5533,94 @@ var author$project$Main$panel_4_screws = A2(
 						_Utils_Tuple2(950, 683),
 						_Utils_Tuple2(994, 685),
 						_Utils_Tuple2(1038, 689),
-						_Utils_Tuple2(1048, 706),
 						_Utils_Tuple2(1082, 692),
 						_Utils_Tuple2(993, 811),
 						_Utils_Tuple2(958, 783),
 						_Utils_Tuple2(925, 755),
 						_Utils_Tuple2(891, 726)
+					])))
+		]));
+var author$project$Main$panel_4_screws = A2(
+	elm_community$typed_svg$TypedSvg$g,
+	_List_Nil,
+	_List_fromArray(
+		[
+			author$project$Main$panel_4_and_7_screws,
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
+			A2(
+				elm$core$List$map,
+				function (_n0) {
+					var dx = _n0.a;
+					var dy = _n0.b;
+					return A2(
+						elm_community$typed_svg$TypedSvg$use,
+						_List_fromArray(
+							[
+								elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#screw_4'),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
+							]),
+						_List_Nil);
+				},
+				_List_fromArray(
+					[
+						_Utils_Tuple2(1048, 706)
+					]))),
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
+			A2(
+				elm$core$List$map,
+				function (_n1) {
+					var dx = _n1.a;
+					var dy = _n1.b;
+					return A2(
+						elm_community$typed_svg$TypedSvg$use,
+						_List_fromArray(
+							[
+								elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#screw_2'),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
+							]),
+						_List_Nil);
+				},
+				_List_fromArray(
+					[
+						_Utils_Tuple2(1030, 764)
+					]))),
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
+			A2(
+				elm$core$List$map,
+				function (_n2) {
+					var dx = _n2.a;
+					var dy = _n2.b;
+					return A2(
+						elm_community$typed_svg$TypedSvg$use,
+						_List_fromArray(
+							[
+								elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#screw_2'),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
+							]),
+						_List_Nil);
+				},
+				_List_fromArray(
+					[
+						_Utils_Tuple2(819, 670),
+						_Utils_Tuple2(863, 673),
+						_Utils_Tuple2(857, 701),
+						_Utils_Tuple2(881, 696),
+						_Utils_Tuple2(1128, 694),
+						_Utils_Tuple2(1091, 712),
+						_Utils_Tuple2(1080, 729),
+						_Utils_Tuple2(1100, 735),
+						_Utils_Tuple2(1078, 767),
+						_Utils_Tuple2(1057, 798),
+						_Utils_Tuple2(1036, 829)
 					])))
 		]));
 var author$project$Main$panel_4 = A2(
@@ -5461,7 +5648,7 @@ var author$project$Main$panel_5_base = A2(
 				]),
 			_List_Nil)
 		]));
-var author$project$Main$panel_5_screws = A2(
+var author$project$Main$panel_5_and_8_screws = A2(
 	elm_community$typed_svg$TypedSvg$g,
 	_List_Nil,
 	_List_fromArray(
@@ -5503,6 +5690,87 @@ var author$project$Main$panel_5_screws = A2(
 						_Utils_Tuple2(788, 625),
 						_Utils_Tuple2(783, 584),
 						_Utils_Tuple2(773, 502)
+					])))
+		]));
+var author$project$Main$panel_5_screws = A2(
+	elm_community$typed_svg$TypedSvg$g,
+	_List_Nil,
+	_List_fromArray(
+		[
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
+			_List_fromArray(
+				[author$project$Main$panel_5_and_8_screws])),
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
+			A2(
+				elm$core$List$map,
+				function (_n0) {
+					var dx = _n0.a;
+					var dy = _n0.b;
+					return A2(
+						elm_community$typed_svg$TypedSvg$use,
+						_List_fromArray(
+							[
+								elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#screw_2'),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
+							]),
+						_List_Nil);
+				},
+				_List_fromArray(
+					[
+						_Utils_Tuple2(795, 520),
+						_Utils_Tuple2(836, 520),
+						_Utils_Tuple2(796, 561),
+						_Utils_Tuple2(836, 561),
+						_Utils_Tuple2(845, 523),
+						_Utils_Tuple2(852, 525),
+						_Utils_Tuple2(883, 525),
+						_Utils_Tuple2(852, 556),
+						_Utils_Tuple2(883, 556),
+						_Utils_Tuple2(942, 527),
+						_Utils_Tuple2(1002, 516),
+						_Utils_Tuple2(1055, 527),
+						_Utils_Tuple2(1110, 544),
+						_Utils_Tuple2(841, 587),
+						_Utils_Tuple2(908, 587),
+						_Utils_Tuple2(1009, 575),
+						_Utils_Tuple2(1080, 595),
+						_Utils_Tuple2(818, 641),
+						_Utils_Tuple2(881, 631),
+						_Utils_Tuple2(948, 631),
+						_Utils_Tuple2(1017, 623),
+						_Utils_Tuple2(1080, 639)
+					]))),
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
+			A2(
+				elm$core$List$map,
+				function (_n1) {
+					var dx = _n1.a;
+					var dy = _n1.b;
+					return A2(
+						elm_community$typed_svg$TypedSvg$use,
+						_List_fromArray(
+							[
+								elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#screw_2'),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
+							]),
+						_List_Nil);
+				},
+				_List_fromArray(
+					[
+						_Utils_Tuple2(995, 655),
+						_Utils_Tuple2(1062, 650),
+						_Utils_Tuple2(1102, 650),
+						_Utils_Tuple2(1067, 676),
+						_Utils_Tuple2(1102, 679),
+						_Utils_Tuple2(1126, 677)
 					])))
 		]));
 var author$project$Main$panel_5 = A2(
@@ -5578,6 +5846,98 @@ var author$project$Main$panel_6 = A2(
 	_List_Nil,
 	_List_fromArray(
 		[author$project$Main$panel_6_base, author$project$Main$panel_6_screws]));
+var author$project$Main$panel_7_screws = A2(
+	elm_community$typed_svg$TypedSvg$g,
+	_List_Nil,
+	_List_fromArray(
+		[
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_fromArray(
+				[
+					elm_community$typed_svg$TypedSvg$Attributes$transform(
+					_List_fromArray(
+						[
+							A2(elm_community$typed_svg$TypedSvg$Types$Scale, -1, 1)
+						]))
+				]),
+			_List_fromArray(
+				[author$project$Main$panel_4_and_7_screws])),
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
+			A2(
+				elm$core$List$map,
+				function (_n0) {
+					var dx = _n0.a;
+					var dy = _n0.b;
+					return A2(
+						elm_community$typed_svg$TypedSvg$use,
+						_List_fromArray(
+							[
+								elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#screw_4'),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
+							]),
+						_List_Nil);
+				},
+				_List_fromArray(
+					[
+						_Utils_Tuple2(-870, 673),
+						_Utils_Tuple2(-864, 699),
+						_Utils_Tuple2(-1067, 794),
+						_Utils_Tuple2(-1087, 764),
+						_Utils_Tuple2(-1108, 732)
+					]))),
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
+			A2(
+				elm$core$List$map,
+				function (_n1) {
+					var dx = _n1.a;
+					var dy = _n1.b;
+					return A2(
+						elm_community$typed_svg$TypedSvg$use,
+						_List_fromArray(
+							[
+								elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#screw_2'),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
+							]),
+						_List_Nil);
+				},
+				_List_fromArray(
+					[
+						_Utils_Tuple2(-1026, 750),
+						_Utils_Tuple2(-1021, 733),
+						_Utils_Tuple2(-998, 729)
+					]))),
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
+			A2(
+				elm$core$List$map,
+				function (_n2) {
+					var dx = _n2.a;
+					var dy = _n2.b;
+					return A2(
+						elm_community$typed_svg$TypedSvg$use,
+						_List_fromArray(
+							[
+								elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#screw_2'),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
+							]),
+						_List_Nil);
+				},
+				_List_fromArray(
+					[
+						_Utils_Tuple2(-819, 670),
+						_Utils_Tuple2(-1128, 694),
+						_Utils_Tuple2(-1036, 829)
+					])))
+		]));
 var author$project$Main$panel_7 = A2(
 	elm_community$typed_svg$TypedSvg$g,
 	_List_Nil,
@@ -5595,6 +5955,13 @@ var author$project$Main$panel_7 = A2(
 				]),
 			_List_fromArray(
 				[author$project$Main$panel_4_base])),
+			author$project$Main$panel_7_screws
+		]));
+var author$project$Main$panel_8_screws = A2(
+	elm_community$typed_svg$TypedSvg$g,
+	_List_Nil,
+	_List_fromArray(
+		[
 			A2(
 			elm_community$typed_svg$TypedSvg$g,
 			_List_fromArray(
@@ -5606,7 +5973,39 @@ var author$project$Main$panel_7 = A2(
 						]))
 				]),
 			_List_fromArray(
-				[author$project$Main$panel_4_screws]))
+				[author$project$Main$panel_5_and_8_screws])),
+			A2(
+			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
+			A2(
+				elm$core$List$map,
+				function (_n0) {
+					var dx = _n0.a;
+					var dy = _n0.b;
+					return A2(
+						elm_community$typed_svg$TypedSvg$use,
+						_List_fromArray(
+							[
+								elm_community$typed_svg$TypedSvg$Attributes$xlinkHref('#screw_2'),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$x(dx),
+								elm_community$typed_svg$TypedSvg$Attributes$InPx$y(dy)
+							]),
+						_List_Nil);
+				},
+				_List_fromArray(
+					[
+						_Utils_Tuple2(-1086, 517),
+						_Utils_Tuple2(-882, 518),
+						_Utils_Tuple2(-1094, 550),
+						_Utils_Tuple2(-1001, 565),
+						_Utils_Tuple2(-939, 575),
+						_Utils_Tuple2(-867, 568),
+						_Utils_Tuple2(-1024, 614),
+						_Utils_Tuple2(-867, 612),
+						_Utils_Tuple2(-1026, 652),
+						_Utils_Tuple2(-899, 652),
+						_Utils_Tuple2(-825, 652)
+					])))
 		]));
 var author$project$Main$panel_8 = A2(
 	elm_community$typed_svg$TypedSvg$g,
@@ -5627,16 +6026,9 @@ var author$project$Main$panel_8 = A2(
 				[author$project$Main$panel_5_base])),
 			A2(
 			elm_community$typed_svg$TypedSvg$g,
+			_List_Nil,
 			_List_fromArray(
-				[
-					elm_community$typed_svg$TypedSvg$Attributes$transform(
-					_List_fromArray(
-						[
-							A2(elm_community$typed_svg$TypedSvg$Types$Scale, -1, 1)
-						]))
-				]),
-			_List_fromArray(
-				[author$project$Main$panel_5_screws]))
+				[author$project$Main$panel_8_screws]))
 		]));
 var author$project$Main$panel_9 = A2(
 	elm_community$typed_svg$TypedSvg$g,
